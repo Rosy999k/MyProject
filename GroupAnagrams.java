@@ -1,3 +1,9 @@
+// Strings can contain characters of any type..
+
+// Step-1: Sort each string
+// Step-2: Initialize Map<String, List<String>> -- key is sorted string and map is anagrams related to sorted string
+// return new ArrayList<>(map.values());
+
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();

@@ -1,3 +1,9 @@
+/*
+naive - linear traversal O(mn) space o(1)
+better - binary search on each row O(nlogm)
+optimal - top right corner o(m+n)
+best - time log(mn) space o(1)
+ */
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         if(matrix == null || matrix.length == 0) return false;

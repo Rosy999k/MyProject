@@ -1,3 +1,12 @@
+/*
+Initialize a map
+iterate to put elements as key and occurence as value
+Initialize a queue with custom comparator
+Add all keys into queue based on increasing order of occurence
+Remove value from queue till size is > than K
+Iterate over the queue and take value in array to return it
+ */
+
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> countByNum = new HashMap<>();
