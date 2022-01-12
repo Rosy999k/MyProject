@@ -14,23 +14,21 @@ class Solution {
             for(int i = left; i<=right && res.size()< size ; i++) {
                 res.add(matrix[up][i]);
             }
-
-            for(int i =up+1; i<=down-1 && res.size()< size; i++) {
+            up++;
+            for(int i =up; i<=down && res.size()< size; i++) {
                 res.add(matrix[i][right]);
             }
-
+            right--;
             for(int i=right; i>=left && res.size()<size; i--) {
                 res.add(matrix[down][i]);
             }
-
-            for(int i=down-1; i>=up+1 && res.size()<size; i--) {
+            down--;
+            for(int i=down; i>=up && res.size()<size; i--) {
                 res.add(matrix[i][left]);
             }
 
             left++;
-            right--;
-            up++;
-            down--;
+
         }
         return res;
     }

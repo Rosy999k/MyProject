@@ -26,14 +26,14 @@ class Solution {
 
                         res.add(Arrays.asList(arr[i],arr[low], arr[high]));
 
-                        while( low < high && arr[low] == arr[low+1]) low++; // ignore -1's
-                        while( low < high && arr[high] == arr[high-1]) high--;
-                        low++; // going to next element
+                        while( low < high && arr[low] == arr[low+1]) low++; // ignore all -1's
+                        while( low < high && arr[high] == arr[high-1]) high--; // all similar ele are ignored
+                        low++; // going to next element 0
                         high--;
                     }
 
-                    else if(arr[low]+arr[high] < sum) low++;
-                    else high--;
+                    else if(arr[low]+arr[high] < sum) low++; // adding up to less than sum
+                    else high--; // if greater than sum reduce
                 }
             }
         }

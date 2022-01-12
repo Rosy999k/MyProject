@@ -1,3 +1,8 @@
+/* Ask whether the intervals will be in sorted or not
+ sort the intervals and linear scan n merge O(NlogN) O(N^2)
+
+ */
+
 package Arrays;
 
 import java.util.ArrayList;
