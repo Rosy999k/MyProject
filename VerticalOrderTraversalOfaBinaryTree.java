@@ -1,4 +1,11 @@
-/**
+/** traverse every node and aissgn verticals and levels using any traveesal ( node, v level)
+ * levels and x axis y axis iterate from ascending order of x and iterate ascending order of level
+ *
+ * 4
+ * 2 5
+ * 1 9 10 6
+ * 3
+ * 10
  * Definition for a binary tree node.
  * public class TreeNode {
  *     int val;
