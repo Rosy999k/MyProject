@@ -3,6 +3,7 @@
 // Step-1: Sort each string
 // Step-2: Initialize Map<String, List<String>> -- key is sorted string and map is anagrams related to sorted string
 // return new ArrayList<>(map.values());
+TCO(KlogK)Neach string N is length of strs sc O(NK)
 
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {

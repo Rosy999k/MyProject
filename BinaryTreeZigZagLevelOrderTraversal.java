@@ -1,4 +1,4 @@
-/**
+/** T O(N) S O(N)
  * insert elements to q and keep a flag to change the direction
  * Definition for a binary tree node.
  * public class TreeNode {

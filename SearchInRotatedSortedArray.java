@@ -1,3 +1,7 @@
+/* 4 5 6 7 0 1 2 target 0 linear search O(N)
+sorted array, binary search  in sorted list eliminate left if not there
+O(log N) O(1)
+ */
 class Solution {
     public int search(int[] nums, int target) {
         int left = 0;
