@@ -1,7 +1,9 @@
-/**
+/** Brute : iterating all the nodes and add to arraylist. collections.sort and add creata a new linked list O(NlogN)
+ * Better : compare 3 values and add to dummy.next T(NK) size of list SO(N)
+ * Optimal : Combine two lists and again combine recursively SO(1)
  * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
+ * public class ListNode { 1 2 3
+ *     int val;            1 3 4
  *     ListNode next;
  *     ListNode() {}
  *     ListNode(int val) { this.val = val; }
