@@ -1,4 +1,5 @@
-/*
+/* 0 1 2 3 4 5 6 7 8 9
+   2 5 9 6 9 3 8 9 7 1
 two pointer hare tortoise, give second chance to tortoise make hare to traverse one step
  */
 class Solution {
