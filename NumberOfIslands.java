@@ -1,3 +1,6 @@
+/* dfs if founf grid[i][j] n++ mark to 0 look all sides of i j
+O(MN) O(MN)
+ */
 class Solution {
     public int numIslands(char[][] grid) {
         int rows = grid.length;

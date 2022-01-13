@@ -1,5 +1,10 @@
 /*
 Sort the intervals and compare
+Input: intervals = [[0,30],[5,10],[15,20]]
+Output:
+
+Input: intervals = [[7,10],[2,4]]
+Output: true
  */
 class Solution {
     public boolean canAttendMeetings(int[][] intervals) {

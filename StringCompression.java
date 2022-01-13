@@ -1,3 +1,9 @@
+/* a a b b c c c
+  ij j j
+j-i    i j j
+
+a
+ */
 class Solution {
     public int compress(char[] chars) {
         int index=0;
@@ -9,7 +15,7 @@ class Solution {
             }
 
             chars[index++] = chars[i];
-            if(j - i > 1)
+            if(j - i > 1) // eliminates a 1 if only occurs once
             {
                 String count = j -i + "";
                 for (char c: count.toCharArray()) {
@@ -21,25 +27,3 @@ class Solution {
         return index;
     }
 }
-
-//class Solution {
-//    public int compress(char[] chars) {
-//        int index= 0;
-//        for(int i = 0; i< chars.length;i++) {
-//            chars[index++] = chars[i];
-//            int start = i;
-//            while(i+1 < chars.length && chars[start] == chars[i+1]) {
-//                i++;
-//            }
-//            int count = i-start+1;
-//            if(count == 1) continue;
-//            if(count < 10) chars[index++] = (char)(count+'0');
-//            else
-//                for(char c : String.valueOf(count).toCharArray()) {
-//                    chars[index++]=c;
-//                }
-//        }
-//        return index;
-//    }
-//
-//}

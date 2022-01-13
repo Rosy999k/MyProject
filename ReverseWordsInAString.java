@@ -1,3 +1,8 @@
+/*Input: s = "  hello world  "
+Output: "world hello"
+Explanation: Your reversed string should not contain leading or trailing spaces
+TC O(N) SC O(N) String builder Deque add front and append space while joining
+ */
 class Solution {
     public String reverseWords(String s) {
         int left= 0; int right = s.length()-1;
@@ -15,8 +20,8 @@ class Solution {
                 sb.append(s.charAt(i));
             }
             else if(sb.length() > 0) {
-                dq.addFirst(sb.toString());
-                sb.setLength(0);
+                dq.addFirst(sb.toString()); // add to dq in front
+                sb.setLength(0); //reset word
             }
         }
         //     System.out.println(dq);
