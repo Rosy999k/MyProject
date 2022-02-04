@@ -1,23 +1,15 @@
-/**
- * @param {number[]} height
- * @return {number}
+/*
+Two pointer approach
  */
-var maxArea = function(height) {
-        let start = 0;
-        let end = height.length - 1;
-        let max = 0;
+class Solution {
+    public int maxArea(int[] height) {
+        int water = 0, left = 0, right = height.length-1;
 
-        while (start < end) {
-        let currHeight = Math.min(height[start], height[end]);
-        let currWater = currHeight * (end - start);
-        if (currWater > max) {
-        max = currWater;
+        while(left < right) {
+            water = Math.max(water, Math.min(height[left], height[right]) * (right-left));
+            if(height[left] > height[right]) right--;
+            else left++;
         }
-        if (height[start] > height[end])
-        end--;
-        else
-        start++;
-        }
-
-        return max;
-        };
+        return water;
+    }
+}

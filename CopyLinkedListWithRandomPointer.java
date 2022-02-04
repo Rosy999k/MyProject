@@ -7,7 +7,7 @@ front = iter.next
 copyNode = new Node(iter.val);
 iter.next = copy;
 copy.next = front;
-
+ O(N) + O(N) +(N)
  */
 
 /*
@@ -48,7 +48,7 @@ class Solution {
             if (iter.random != null) {
                 iter.next.random = iter.random.next;
             }
-            iter = iter.next.next;
+            iter = iter.next.next;// 1 1' 2 2' 1 jump to 2
         }
 
         // Third round: restore the original list, and extract the copy list.
@@ -60,7 +60,7 @@ class Solution {
             front = iter.next.next;
 
             // extract the copy
-            copy.next = iter.next;
+            copy.next = iter.next; // 1' 2'
             copy = copy.next;
 
             // restore the original list

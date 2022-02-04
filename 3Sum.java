@@ -20,7 +20,7 @@ class Solution {
                 // two pointer approach
                 int low=i+1;
                 int high=arr.length-1;
-                int sum = 0 - arr[i];
+                int sum = 0 - arr[i];// -a
                 while(low< high){
                     if(arr[low]+arr[high] == sum) {
 
